@@ -19,7 +19,7 @@ namespace HttpRequest.Services
                 var responseString = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<List<Dog>>(responseString);
             }
-            throw new Exception(response.ReasonPhrase);
+            return null;
         }
     }
 }

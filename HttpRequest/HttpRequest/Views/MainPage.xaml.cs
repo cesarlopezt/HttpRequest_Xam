@@ -1,4 +1,5 @@
-﻿using HttpRequest.ViewModels;
+﻿using HttpRequest.Services;
+using HttpRequest.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace HttpRequest
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new MainViewModel();
+            BindingContext = new MainViewModel(new TheDogsApi());
         }
     }
 }

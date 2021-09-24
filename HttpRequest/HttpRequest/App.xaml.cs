@@ -13,7 +13,7 @@ namespace HttpRequest
             MainPage = new MainPage();
         }
 
-        protected override async void OnStart()
+        protected override void OnStart()
         {
         }
 
